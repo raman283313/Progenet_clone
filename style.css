@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* font-family: 'Poppins', sans-serif; */
+*{
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  backdrop-filter: blur(5px);
+  padding: 5px 25px;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+.rk-svg{
+  fill: #0098c1;
+}
+.nav-item  a {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.intro {
+  background-image: url(../img/firstImage.webp);
+  position: relative;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 8em 4em 17em; 
+  z-index: -11;
+  min-height: calc(50vh + 100px);
+}
+
+.intro::before{
+  content: "";
+  background: linear-gradient(120deg,#5bdcff 10%,#0098c1 55%,transparent 100%);
+  position: absolute;
+  inset: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.intro::after{
+  content: "";
+  -webkit-filter: invert();
+  filter: invert();
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  background-image: url("https://progenetnettoyage.be/wp-content/themes/base_child/assets/css/images/water-background.svg");
+  background-position: bottom left;
+  background-repeat: repeat-x;
+}
+
+.bloc-text .heading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.bloc-text .heading h1 {
+  font-size: 20px;
+  line-height: normal;
+  line-height: 1.2;
+  gap: 10px;
+  color: #fff;
+}
+
+.bloc-text .heading h1 strong {
+  font-size: 43px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.bloc-text p {
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: normal;
+}
+.button{
+  margin: 50px 0 0 0;
+}
+.btn1{
+  margin-left: 30px;
+  background-color: #fff;
+  border-radius: 500px;
+  border-style: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #2f80ed;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  height: 50px;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 14px 30px;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  /* touch-action: manipulation; */
+  /* vertical-align: top; */
+  /* white-space: nowrap; */
+
+}
+.btn1:hover{
+  margin-left: -30px;
+  color: #fff;
+}
+
+.col-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -5rem;
+  
+}
+.image-container {
+  width: 70%;
+  height: 700px;
+  /* height: fit-content; */
+  border-radius: 5px 25px 25px 25px;
+  /* -moz-background-clip: padding;*/
+  -webkit-background-clip: padding-box; 
+  background-clip: padding-box;
+  overflow: hidden;
+  margin-left: 1.6rem;
+  /* -webkit-box-shadow: 10px 10px 50px rgba(0,0,0,0.2); */
+  box-shadow: 10px 10px 50px rgba(0,0,0,0.2);
+}
+.right-text{
+  margin-left: 3rem;
+  /* padding: 30px 20px; */
+  font-family: 'Poppins',sans-serif;
+  margin-top: 5rem;
+  justify-content: center;
+  justify-items: center;
+}
+
+.right-text .heading h3{
+  width: 80%;
+  font-size: 22px;
+  font-weight: 700;
+  word-spacing: .2rem;
+  color:#505557;
+  line-height: 2.5em;
+}
+.right-text .heading strong{
+  color: #0098c1;
+  justify-content: space-around;
+  font-size: 42px;
+  font-family: 'poppins',sans-serif;
+}
+
+.right-text p {
+  
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
+  color: #505557;
+  font-size: 16px;
+}
+.right-text p strong{
+  color: #0098c1;
+}
+
+/* service section */
+.service{
+background: #0098c1;
+background: linear-gradient(150deg,#0098c1 25%,#5bdcff 100%);
+z-index: 0;
+position: relative;
+padding: 200px 0;
+}
+.service::after {
+  -webkit-transform: scaleY(-1) scaleX(-1);
+  transform: scaleY(-1) scaleX(-1);
+  bottom: 0;
+}
+.service::after, .service::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-image: url('https://progenetnettoyage.be/wp-content/themes/base_child/assets/css/images/waves-a.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.service::before {
+  top: 0;
+}
+.service_padding{
+  justify-content: space-between;
+}
+.card{
+  box-sizing: border-box;
+  border-radius: 30px;
+  text-align: center;
+  justify-self: auto;
+ 
+}
+.card::after{
+  transition: all 0.2s;
+  opacity: 0.05;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 200px;
+  background-image: url("https://progenetnettoyage.be/wp-content/themes/base_child/assets/css/images/water-background.svg");
+  background-position: bottom center;
+  background-repeat: repeat-x;
+}
+.card-body{
+  min-height: 440px;
+  width: 100%;
+}
+
+.card-body .card-title{
+  font-family: 'poppins',sans-serif;
+  font-weight: 32px;
+  line-height: 2.3rem;
+  color:#2f80ed;
+  justify-items: center;
+}
+.card-body p{
+  /* padding: 20px; */
+  font-size: 18px;
+  color: #919191;
+}
+.card-body p>strong{
+  color: #2f80ed;
+}
+.card:hover{
+  margin-top: -20px;
+  /* background: linear-gradient(150deg,#0098c1 25%,#5bdcff 100%); */
+  background-color: #0098e1;
+  color: #009831 !important;
+}
+.button1{
+  text-align: center;
+}
+.cardbtn1{
+  background-color: #fff;
+  border-radius: 500px;
+  border-style: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #2f80ed;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  height: 50px;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 14px 30px;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: top;
+  justify-items: center;
+}
+.cardbtn1:hover{
+  margin-left: -30px;
+}
+/* after service section */
+.afterservice{
+  /* position: relative; */
+  padding:150px 0;
+  justify-content: center;
+  text-align: center;
+}
+.bloc-text3{
+  padding: 0 60px;
+}
+.afterservice .bloc-text3 .heading3 h4{
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+.afterservice .bloc-text3 .heading3 h4 strong{
+  font-size: 3rem;
+  color:#0098c1;
+  line-height: 1.2;
+}
+
+.bloc-text3 p{
+  font-size: 18px;
+  color: #505557;
+}
+.bloc-text3 p strong{
+  color: #0098c1;
+}
+
+.button2{
+  position: relative;
+  margin-top: 50px;
+}
+
+.btn2{
+  background-color: #0098c1;
+  /* background: linear-gradient(120deg,#5bdcff 10%,#0098c1 55%,transparent 100%);  */
+  border-radius: 500px;
+  border-style: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  height: 50px;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 14px 30px;
+  position: relative;
+  vertical-align: top;
+  justify-self: center;
+  text-decoration: none;
+  text-transform: uppercase;
+} 
+.btn2:hover{
+  margin-left: -30px;
+  color: #fff;
+}
+
+/* Footer started */
+.footer-section{
+  padding: 300px 0 100px 0;
+  background: linear-gradient(150deg,#0098c1 25%,#5bdcff 100%);
+  position: relative;
+}
+.footer-section::before{
+content: "";
+-webkit-filter: invert();
+filter: invert();
+-webkit-transform: scaleY(-1);
+transform: scaleY(-1);
+z-index: 0;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+height: 300px;
+background-image: url("https://progenetnettoyage.be/wp-content/themes/base_child/assets/css/images/water-background.svg");
+background-position: bottom left;
+background-repeat: repeat-x;
+}
+
+.rk-svg2{
+  fill: #fff;
+}
+.text2{
+  margin-top: 0;
+}
+.right-list{
+  list-style: none;
+  color:#fff;
+  text-align: right !important;
+}
+.copyright-section{
+  border-top: solid #fff 1px;
+  padding:15px 10px;
+  color: #fff;
+  background: linear-gradient(150deg,#22add2 25%,#5bdcff 100%)
+}
+
